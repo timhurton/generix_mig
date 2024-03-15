@@ -1,0 +1,2 @@
+psql:/home/timhurton/git/generix_mig/pl_pg_sql/proc_error.sql:1: NOTICE:  procedure proc_error() does not exist, skipping
+psql:/home/timhurton/git/generix_mig/pl_pg_sql/proc_log.sql:7: NOTICE:  procedure proc_log() does not exist, skipping

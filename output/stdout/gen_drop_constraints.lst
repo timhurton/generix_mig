@@ -1,0 +1,537 @@
+ DROP fk_advanced_shipping_notice_advanced_shipping_notice_status
+
+ALTER TABLE
+ DROP fk_facility_country
+
+ALTER TABLE
+ DROP fk_facility_facility_type
+
+ALTER TABLE
+ DROP fk_facility_language
+
+ALTER TABLE
+ DROP fk_facility_measuring_unit_system
+
+ALTER TABLE
+ DROP fk_user_facility_facility
+
+ALTER TABLE
+ DROP fk_user_facility
+
+ALTER TABLE
+ DROP fk_user_language
+
+ALTER TABLE
+ DROP fk_stock_owner_country
+
+ALTER TABLE
+ DROP fk_user_stock_owner_stock_owner
+
+ALTER TABLE
+ DROP fk_user_stock_owner_user
+
+ALTER TABLE
+ DROP fk_user_stock_owner
+
+ALTER TABLE
+ DROP fk_user_timezone
+
+ALTER TABLE
+ DROP fk_user_facility_user
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_facility
+
+ALTER TABLE
+ DROP fk_inbound_load_inbound_load_status
+
+ALTER TABLE
+ DROP fk_partner_country
+
+ALTER TABLE
+ DROP fk_partner_stock_owner
+
+ALTER TABLE
+ DROP fk_partner_timezone
+
+ALTER TABLE
+ DROP fk_inbound_load_partner
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_inbound_load
+
+ALTER TABLE
+ DROP fk_aisle_aisle_direction
+
+ALTER TABLE
+ DROP fk_aisle_aisle_status
+
+ALTER TABLE
+ DROP fk_aisle_facility
+
+ALTER TABLE
+ DROP fk_location_rule_facility
+
+ALTER TABLE
+ DROP fk_aisle_location_rule
+
+ALTER TABLE
+ DROP fk_zone_facility
+
+ALTER TABLE
+ DROP fk_zone_location_rule
+
+ALTER TABLE
+ DROP fk_zone_zone_status
+
+ALTER TABLE
+ DROP fk_aisle_zone
+
+ALTER TABLE
+ DROP fk_location_aisle
+
+ALTER TABLE
+ DROP fk_location_facility
+
+ALTER TABLE
+ DROP fk_level_level_status
+
+ALTER TABLE
+ DROP fk_level_location_rule
+
+ALTER TABLE
+ DROP fk_location_weight_volume_facility
+
+ALTER TABLE
+ DROP fk_measuring_unit_measuring_unit_system
+
+ALTER TABLE
+ DROP fk_measuring_unit_measuring_unit_type
+
+ALTER TABLE
+ DROP fk_location_weight_volume_measuring_unit
+
+ALTER TABLE
+ DROP fk_location_weight_volume_measuring_unit_2
+
+ALTER TABLE
+ DROP fk_location_weight_volume_measuring_unit_3
+
+ALTER TABLE
+ DROP fk_level_location_weight_volume
+
+ALTER TABLE
+ DROP fk_rack_aisle
+
+ALTER TABLE
+ DROP fk_rack_location_rule
+
+ALTER TABLE
+ DROP fk_rack_location_weight_volume
+
+ALTER TABLE
+ DROP fk_rack_rack_status
+
+ALTER TABLE
+ DROP fk_level_rack
+
+ALTER TABLE
+ DROP fk_location_level
+
+ALTER TABLE
+ DROP fk_location_location_rule
+
+ALTER TABLE
+ DROP fk_location_location_status
+
+ALTER TABLE
+ DROP fk_location_type_location_class
+
+ALTER TABLE
+ DROP fk_location_type_location_hierarchy_level
+
+ALTER TABLE
+ DROP fk_location_type_location_weight_volume
+
+ALTER TABLE
+ DROP fk_location_location_type
+
+ALTER TABLE
+ DROP fk_location_location_weight_volume
+
+ALTER TABLE
+ DROP fk_location_measuring_unit
+
+ALTER TABLE
+ DROP fk_location_measuring_unit_2
+
+ALTER TABLE
+ DROP fk_location_measuring_unit_3
+
+ALTER TABLE
+ DROP fk_location_rack
+
+ALTER TABLE
+ DROP fk_location_zone
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_location
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_partner
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_advanced_shipping_notice
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_asnds
+
+ALTER TABLE
+ DROP fk_item_master_inventory_priority
+
+ALTER TABLE
+ DROP fk_item_master_item_master_status
+
+ALTER TABLE
+ DROP fk_item_master_measuring_unit
+
+ALTER TABLE
+ DROP fk_item_master_product_class
+
+ALTER TABLE
+ DROP fk_item_master_stock_owner
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_item_master
+
+ALTER TABLE
+ DROP fk_item_sku_attribute_item_master
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_item_sku_attribute
+
+ALTER TABLE
+ DROP fk_item_stock_attribute_item_master
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_item_stock_attribute
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_location
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_partner
+
+ALTER TABLE
+ DROP fk_purchase_order_detail_facility
+
+ALTER TABLE
+ DROP fk_purchase_order_detail_item_master
+
+ALTER TABLE
+ DROP fk_purchase_order_detail_item_sku_attribute
+
+ALTER TABLE
+ DROP fk_purchase_order_detail_item_stock_attribute
+
+ALTER TABLE
+ DROP fk_purchase_order_partner
+
+ALTER TABLE
+ DROP fk_purchase_order_purchase_order_status
+
+ALTER TABLE
+ DROP fk_purchase_order_purchase_order_type
+
+ALTER TABLE
+ DROP fk_purchase_order_stock_owner
+
+ALTER TABLE
+ DROP fk_purchase_order_detail_purchase_order
+
+ALTER TABLE
+ DROP fk_purchase_order_detail_purchase_order_detail_status
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_purchase_order_detail
+
+ALTER TABLE
+ DROP fk_advanced_shipping_notice_detail_stock_owner
+
+ALTER TABLE
+ DROP fk_application_translation_name_language
+
+ALTER TABLE
+ DROP fk_application_translation_application_translation_name
+
+ALTER TABLE
+ DROP fk_attribute_data_option_attribute_data_type
+
+ALTER TABLE
+ DROP fk_carrier_carrier_type
+
+ALTER TABLE
+ DROP fk_carrier_country
+
+ALTER TABLE
+ DROP fk_carrier_stock_owner
+
+ALTER TABLE
+ DROP fk_container_container
+
+ALTER TABLE
+ DROP fk_container_container_state
+
+ALTER TABLE
+ DROP fk_container_location
+
+ALTER TABLE
+ DROP fk_container_stock_owner
+
+ALTER TABLE
+ DROP fk_container_document_container
+
+ALTER TABLE
+ DROP fk_container_document_document_type
+
+ALTER TABLE
+ DROP fk_container_file_container
+
+ALTER TABLE
+ DROP fk_data_translation_data_translation_name
+
+ALTER TABLE
+ DROP fk_data_translation_language
+
+ALTER TABLE
+ DROP fk_document_attribute_attribute_data_type
+
+ALTER TABLE
+ DROP fk_document_attribute_document_type
+
+ALTER TABLE
+ DROP fk_document_attribute_value_document_attribute
+
+ALTER TABLE
+ DROP fk_document_attribute_value_document_type
+
+ALTER TABLE
+ DROP fk_facility_stock_owner_facility
+
+ALTER TABLE
+ DROP fk_facility_stock_owner_stock_owner
+
+ALTER TABLE
+ DROP fk_inbound_load_detail_facility
+
+ALTER TABLE
+ DROP fk_inbound_load_detail_inbound_load
+
+ALTER TABLE
+ DROP fk_inbound_load_detail_inbound_load_detail_status
+
+ALTER TABLE
+ DROP fk_item_master_footprint_item_master
+
+ALTER TABLE
+ DROP fk_item_master_footprint_detail_item_master_footprint
+
+ALTER TABLE
+ DROP fk_item_master_footprint_detail_measuring_unit
+
+ALTER TABLE
+ DROP fk_item_master_footprint_detail_measuring_unit_2
+
+ALTER TABLE
+ DROP fk_item_master_footprint_detail_measuring_unit_3
+
+ALTER TABLE
+ DROP fk_item_master_footprint_detail_measuring_unit_4
+
+ALTER TABLE
+ DROP fk_item_master_footprint_detail_measuring_unit_5
+
+ALTER TABLE
+ DROP fk_item_master_barcode_item_master_footprint_detail
+
+ALTER TABLE
+ DROP fk_item_master_facility_facility
+
+ALTER TABLE
+ DROP fk_item_master_facility_item_master
+
+ALTER TABLE
+ DROP fk_item_master_file_item_master
+
+ALTER TABLE
+ DROP fk_item_master_footprint_file_item_master_footprint_detail
+
+ALTER TABLE
+ DROP fk_item_master_footprint_packaging_item_master_footprint_detail
+
+ALTER TABLE
+ DROP fk_packaging_type_measuring_unit
+
+ALTER TABLE
+ DROP fk_packaging_type_measuring_unit_2
+
+ALTER TABLE
+ DROP fk_packaging_type_measuring_unit_3
+
+ALTER TABLE
+ DROP fk_item_master_footprint_packaging_packaging_type
+
+ALTER TABLE
+ DROP fk_item_master_putaway_type_item_master
+
+ALTER TABLE
+ DROP fk_item_master_putaway_type_putaway_type
+
+ALTER TABLE
+ DROP fk_item_master_sku_attribute_item_master
+
+ALTER TABLE
+ DROP fk_sku_attribute_attribute_data_type
+
+ALTER TABLE
+ DROP fk_sku_attribute_sku_attribute
+
+ALTER TABLE
+ DROP fk_item_master_sku_attribute_sku_attribute
+
+ALTER TABLE
+ DROP fk_item_master_stock_attribute_item_master
+
+ALTER TABLE
+ DROP fk_stock_attribute_attribute_data_type
+
+ALTER TABLE
+ DROP fk_item_master_stock_attribute_stock_attribute
+
+ALTER TABLE
+ DROP fk_item_sku_attribute_value_item_sku_attribute
+
+ALTER TABLE
+ DROP fk_item_sku_attribute_value_sku_attribute
+
+ALTER TABLE
+ DROP fk_item_stock_attribute_value_item_stock_attribute
+
+ALTER TABLE
+ DROP fk_item_stock_attribute_value_stock_attribute
+
+ALTER TABLE
+ DROP fk_location_rule_item_master_item_master
+
+ALTER TABLE
+ DROP fk_location_rule_item_master_location_rule
+
+ALTER TABLE
+ DROP fk_location_rule_product_class_location_rule
+
+ALTER TABLE
+ DROP fk_location_rule_product_class_product_class
+
+ALTER TABLE
+ DROP fk_location_rule_putaway_type_location_rule
+
+ALTER TABLE
+ DROP fk_location_rule_putaway_type_putaway_type
+
+ALTER TABLE
+ DROP fk_location_rule_stock_operation_type_location_rule
+
+ALTER TABLE
+ DROP fk_location_rule_stock_operation_type_stock_operation_type
+
+ALTER TABLE
+ DROP fk_location_rule_stock_owner_location_rule
+
+ALTER TABLE
+ DROP fk_location_rule_stock_owner_stock_owner
+
+ALTER TABLE
+ DROP fk_measuring_unit_conversion_measuring_unit
+
+ALTER TABLE
+ DROP fk_measuring_unit_conversion_measuring_unit_2
+
+ALTER TABLE
+ DROP fk_permission_permission
+
+ALTER TABLE
+ DROP fk_role_permission_permission
+
+ALTER TABLE
+ DROP fk_role_permission_role
+
+ALTER TABLE
+ DROP fk_security_group_role_role
+
+ALTER TABLE
+ DROP fk_security_group_role_security_group
+
+ALTER TABLE
+ DROP fk_stock_container
+
+ALTER TABLE
+ DROP fk_stock_item_master
+
+ALTER TABLE
+ DROP fk_stock_item_master_footprint_detail
+
+ALTER TABLE
+ DROP fk_stock_item_sku_attribute
+
+ALTER TABLE
+ DROP fk_stock_item_stock_attribute
+
+ALTER TABLE
+ DROP fk_stock_location
+
+ALTER TABLE
+ DROP fk_stock_stock_state
+
+ALTER TABLE
+ DROP fk_stock_condition_condition
+
+ALTER TABLE
+ DROP fk_stock_condition_stock
+
+ALTER TABLE
+ DROP fk_stock_operation_stock
+
+ALTER TABLE
+ DROP fk_stock_operation_stock_operation_type
+
+ALTER TABLE
+ DROP fk_stock_operation_stock_state
+
+ALTER TABLE
+ DROP fk_stock_operation_stock_state_2
+
+ALTER TABLE
+ DROP fk_tenant_language
+
+ALTER TABLE
+ DROP fk_unloading_document_type
+
+ALTER TABLE
+ DROP fk_unloading_detail_measuring_unit
+
+ALTER TABLE
+ DROP fk_unloading_detail_unloading
+
+ALTER TABLE
+ DROP fk_user_role_role
+
+ALTER TABLE
+ DROP fk_user_role_user
+
+ALTER TABLE
+ DROP fk_user_security_group_security_group
+
+ALTER TABLE
+ DROP fk_user_security_group_user
+
+ALTER TABLE

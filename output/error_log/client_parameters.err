@@ -1,0 +1,1 @@
+psql:/home/timhurton/git/generix_mig/tables/client_parameters.sql:9: NOTICE:  table "client_parameters" does not exist, skipping

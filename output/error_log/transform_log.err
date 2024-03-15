@@ -1,0 +1,1 @@
+psql:/home/timhurton/git/generix_mig/tables/transform_log.sql:10: NOTICE:  table "transform_log" does not exist, skipping

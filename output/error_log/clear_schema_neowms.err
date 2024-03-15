@@ -1,0 +1,6 @@
+psql:/home/timhurton/git/generix_mig/install/clear_schema.sql:67: NOTICE:  drop cascades to view vw_compare_indexes
+psql:/home/timhurton/git/generix_mig/install/clear_schema.sql:67: NOTICE:  drop cascades to 4 other objects
+DETAIL:  drop cascades to view vw_unique_constraints
+drop cascades to view vw_foreign_constraints
+drop cascades to view vw_constraint_reports
+drop cascades to view vw_compare_constraints

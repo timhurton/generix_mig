@@ -1,0 +1,1 @@
+psql:/home/timhurton/git/generix_mig/views/vw_foreign_cons_source.sql:1: NOTICE:  view "vw_foreign_cons_source" does not exist, skipping

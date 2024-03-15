@@ -1,0 +1,7 @@
+psql:/home/timhurton/git/generix_mig/install/drop_extensions.sql:19: NOTICE:  drop cascades to 5 other objects
+DETAIL:  drop cascades to foreign table error_log
+drop cascades to foreign table transform_log
+drop cascades to view vw_final_record_count
+drop cascades to view vw_failed_reconciliation
+drop cascades to view vw_elapsed_module_times
+psql:/home/timhurton/git/generix_mig/install/drop_extensions.sql:21: NOTICE:  foreign table "transform_log" does not exist, skipping

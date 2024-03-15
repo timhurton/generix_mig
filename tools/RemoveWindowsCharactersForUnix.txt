@@ -1,0 +1,1 @@
+sed $'s/\r$//' ./install.sh > ./install.Unix.sh

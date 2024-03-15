@@ -1,4 +1,4 @@
 ./transform/gen_*.*
-.output/
-.scratch/
-.redundant/
+output/
+scr/
+redundant/

@@ -1,4 +1,0 @@
-psql:/home/timhurton/git/generix_mig/tables/client_parameters.sql:9: NOTICE:  table "client_parameters" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/tables/migration_reports.sql:9: NOTICE:  table "migration_reports" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/tables/index_audit.sql:9: NOTICE:  table "index_audit" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/tables/constraint_audit.sql:9: NOTICE:  table "constraint_audit" does not exist, skipping

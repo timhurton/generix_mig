@@ -1,5 +1,0 @@
-psql:/home/timhurton/git/generix_mig/install/create_extensions.sql:20: NOTICE:  foreign table "transform_log" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/install/create_extensions.sql:21: NOTICE:  server "utils_bridge" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/install/create_extensions.sql:22: NOTICE:  server "utils_bridge" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/install/create_extensions.sql:23: NOTICE:  extension "postgres_fdw" does not exist, skipping
-psql:/home/timhurton/git/generix_mig/install/create_extensions.sql:24: NOTICE:  extension "dblink" does not exist, skipping

@@ -37,19 +37,22 @@ BEGIN
          ,p_rec_count
          );
 EXCEPTION
-  -- START standard error logging
   WHEN OTHERS THEN
     GET stacked DIAGNOSTICS
       v_state := returned_sqlstate
      ,v_msg := message_text
      ,v_detail := pg_exception_detail;
-    CALL proc_error(p_module      => v_module
-                   ,p_error_state => v_state
-                   ,p_error_msg   => v_msg
-                   ,p_error_dtl   => v_detail
-                   ,p_step        => v_step
-                   );
+    RAISE NOTICE E' Module % encountered exception at % state: %
+	  MESSAGE: %
+	  DETAIL: %
+	  STEP: %'
+	  ,v_module
+      ,clock_timestamp()
+      ,v_state
+      ,v_msg
+      ,v_detail
+      ,v_step;
     RAISE;
-  -- END standard error logging
+-- End standard error handling
 END;
 $$

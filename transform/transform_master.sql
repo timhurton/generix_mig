@@ -21,8 +21,6 @@ DECLARE
   --
   -- END standard declarations
   --
-  vReturn varchar(20); 
-    
 BEGIN
   -- Assumption that we do not need to include this connection in the child
   -- objects called from here.
@@ -32,36 +30,38 @@ BEGIN
   v_step := 10;
 
   -- Clear down target tables via views.
-  DELETE FROM stock;
-  DELETE FROM item_masters;
-  DELETE FROM item_master_statuses;
-  DELETE FROM locations;
-  DELETE FROM location_statuses;
-  DELETE FROM levels;
-  DELETE FROM racks;
-  DELETE FROM aisles;
-  DELETE FROM zones;
-  DELETE FROM facilities;
-  DELETE FROM product_classes;
-  DELETE FROM facility_types;
-  DELETE FROM countries;
-  DELETE FROM languages;
-  DELETE FROM measuring_units;
-  DELETE FROM measuring_unit_types;
-  DELETE FROM measuring_unit_systems;
+--   DELETE FROM stock;
+--   DELETE FROM item_masters;
+--   DELETE FROM item_master_statuses;
+--   DELETE FROM locations;
+--   DELETE FROM location_statuses;
+--   DELETE FROM levels;
+--   DELETE FROM racks;
+--   DELETE FROM aisles;
+--   DELETE FROM zones;
+  DELETE FROM facility;
+--   DELETE FROM product_classes;
+--   DELETE FROM facility_types;
+--   DELETE FROM countries;
+--   DELETE FROM languages;
+--   DELETE FROM measuring_units;
+--   DELETE FROM measuring_unit_types;
+--   DELETE FROM measuring_unit_systems;
 --   Might need to re-assess how we handle the commits from within this script. Cannot have commits and exceptions !!!!!
   COMMIT;  -- Need TO RELEASE LARGE ROLLBACK segment
 
 
   v_step := 30;
   -- remember to add new tables to the delete section (above) as well
+  CALL proc_transform_facility();
+  COMMIT;
 --   CALL proc_load_reference_data();
 --   COMMIT;
+/*
   CALL proc_transform_languages();
   COMMIT;
   CALL proc_transform_countries();
   COMMIT;
-/*
   CALL transform_facility_types();
   COMMIT;
   CALL transform_facilities();

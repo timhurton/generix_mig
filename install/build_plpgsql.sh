@@ -17,3 +17,5 @@ psql -d $db -h 10.5.2.4 -U $trfm_user -f $pl_pg_sql/proc_build_index.sql -t > $s
 cat $error_log/proc_build_index.err
 psql -d $db -h 10.5.2.4 -U $trfm_user -f $pl_pg_sql/proc_rebuild_index.sql -t > $stdout/proc_rebuild_index.lst 2> $error_log/proc_rebuild_index.err
 cat $error_log/proc_rebuild_index.err
+psql -d $db -h 10.5.2.4 -U $trfm_user -f $pl_pg_sql/proc_transform_facility.sql -t > $stdout/proc_transform_facility.lst 2> $error_log/proc_transform_facility.err
+cat $error_log/proc_transform_facility.err

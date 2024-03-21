@@ -19,7 +19,7 @@ DECLARE
   v_detail  TEXT;
   v_step    INTEGER DEFAULT -1;
   -- END standard declarations
-  v_index_definition VARCHAR(200);
+  v_index_definition VARCHAR(1000);
 
 BEGIN 
   v_step := 10;

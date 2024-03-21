@@ -1,5 +1,13 @@
 CREATE OR REPLACE PROCEDURE proc_transform_zones()
   LANGUAGE plpgsql AS $$
+/* ***************************************************************************************************************  
+   *
+   * Date        Developer   Description
+   * ==========  ==========  ===========
+   * 15/03/2024  Tim Hurton  Initial Revision. A brief description of what the module does.
+   * 
+   ***************************************************************************************************************  
+*/   
 DECLARE 
   -- BEGIN standard declarations
   v_module transform_log.module_name%TYPE := 'PROC_TRANSFORM_ZONES';
@@ -42,8 +50,8 @@ BEGIN
           ,pRecCount => v_count);
   
   v_step := 40;
-  INSERT INTO zones(zone_code
-                   ,facility_id)
+  INSERT INTO zone(zone_code
+                  ,facility_id)
   SELECT z.zonsts
         ,f.id
     FROM gezzon z
@@ -54,29 +62,29 @@ BEGIN
     FROM (SELECT a.zonsts
                 ,f.id AS facility_id
             FROM gezall a
-            JOIN "NeoWMS".facilities f ON (f.facility_name = a.codsit)
+            JOIN facility f ON (f.facility_name = a.codsit)
           EXCEPT  
           SELECT z.zonsts
                 ,f.id
-            FROM "WMS".gezzon z
-            JOIN "NeoWMS".facilities f ON (f.facility_name = z.codsit)) x;
+            FROM gezzon z
+            JOIN facility f ON (f.facility_name = z.codsit)) x;
 
   v_step := 50;
   SELECT COUNT(1)
   INTO vCount 
-  FROM "NeoWMS".zones;
+  FROM zones;
 
   v_step := 60;
-  vResult := "Transform".transform_log(pModule => vModule
-                                ,pEvent => 'RECORDCOUNT'::varchar
-                                ,pDesc => 'ZONES OUTPUT'::varchar
-                                ,pRecCount => vCount);
+  CALL proc_log(pModule => vModule
+               ,pEvent => 'RECORDCOUNT'::varchar
+               ,pDesc => 'ZONES OUTPUT'::varchar
+               ,pRecCount => vCount);
 
        
   v_step := 70;
-  vResult := "Transform".transform_log(pModule => vModule
-                                ,pEvent => 'END'::varchar);
-  RETURN 'SUCCESS';
+  CALL proc_log(pModule => vModule
+               ,pEvent => 'END'::varchar);
+
 EXCEPTION
   -- START standard error logging
   WHEN OTHERS THEN

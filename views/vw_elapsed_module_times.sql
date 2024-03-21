@@ -6,7 +6,7 @@ SELECT s.run_id AS "Run Id"
   FROM transform_log s
   JOIN transform_log e ON (s.module_name = e.module_name AND s.run_id = e.run_id AND e.event_name = 'END')
  WHERE s.event_name = 'START'
-   AND s.module_name NOT IN ('BUILD_INDEX','REBUILD_INDEX','PROC_INSERT_PIVOT')
+   AND s.module_name NOT IN ('PROC_BUILD_INDEX','PROC_REBUILD_INDEX')
    AND s.run_id = (SELECT MAX(run_id) 
                      FROM transform_log)
    AND e.run_id = s.run_id                    

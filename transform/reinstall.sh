@@ -16,5 +16,5 @@ psql -d $remote_db -h 10.5.2.4 -p 5432 -U $trfm_user -f $install/clear_schema.sq
 cat $error_log/clear_schema_$remote_db.err
 psql -d $db -h 10.5.2.4 -p 5432 -U $trfm_user -f $install/drop_utils_db.sql > $stdout/drop_utils_db.lst 2> $error_log/drop_utils_db.err 
 cat $error_log/drop_utils_db.err
-# ./install.sh > $stdout/install.lst 2> $error_log/install.err
-# cat $error_log/install.err
+./install.sh > $stdout/install.lst 2> $error_log/install.err
+cat $error_log/install.err

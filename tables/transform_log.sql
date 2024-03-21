@@ -11,6 +11,7 @@ DROP TABLE IF EXISTS public.transform_log CASCADE;
 
 CREATE TABLE public.transform_log(id             SERIAL NOT NULL
                           ,module_name    VARCHAR(80) NOT NULL
+                          ,username     VARCHAR(80) NOT NULL 
                           ,event_name     VARCHAR(80) NOT NULL 
                           ,description    VARCHAR(1000) NULL 
                           ,record_count   INTEGER NULL 

@@ -8,13 +8,15 @@ I have created a file called **samples.sql** for specific examples. The examples
 
 We will be adopting the naming standard of the database, that is, all names will be in lowercase and separated with underscores e.g.:
 
-> _table_name_
-
 > _column_name_
+
+> _func_function_
 
 > _proc_procedure_
 
-> _func_function_
+> _table_name_
+
+> _vw_view_
 
 All commands and reserved words should be in uppercase.
 
